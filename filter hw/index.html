@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filter</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  <style>
+    body {
+      height: 100vh;
+      background: url(./bg.jpg) fixed center/cover;
+      color: white;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+
+    .box {
+      border: 1px solid rgba(255, 255, 255, .7);
+      width: 20%;
+      height: 350px;
+      text-align: center;
+    }
+
+    .round-first {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+
+    .round-last {
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    @media(max-width:768px) {
+      h1 {
+        font-size: 35px;
+      }
+
+      .box {
+        width: 100%;
+        height: 100px;
+        line-height: 20px;
+      }
+
+      .round-first {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+      }
+
+      .round-last {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body class="d-flex align-items-center ms-5 pt-5 pt-md-0">
+  <div class="container-fluid d-flex">
+    <div class="row flex-nowrap flex-column flex-md-row round-first mt-5 pt-5 pt-md-0">
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center ms-md-2 round-first">
+        <h1 class="ps-3">backdrop-filter 效果</h1>
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center ps-5" style="font-size: 28px;">
+        backdrop-filter: none
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: grayscale(1);font-size: 28px;">
+        backdrop-filter: grayscale(1)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: brightness(1.5);font-size: 24px;">
+        backdrop-filter: brightness(1.5)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: blur(5px);font-size: 28px;">
+        backdrop-filter: blur(5px)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: contrast(0.8);font-size: 27px;">
+        backdrop-filter: contrast(0.8)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: invert(0.7);font-size: 27px;">
+        backdrop-filter: invert(0.7)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: opacity(0.4);font-size: 27px;">
+        backdrop-filter: opacity(0.4)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: sepia(0.4);font-size: 27px;">
+        backdrop-filter: sepia(0.4)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center"
+        style="backdrop-filter: saturate(1.8);font-size: 27px;">
+        backdrop-filter: saturate(1.8)
+      </div>
+      <div class="col-12 col-md-4 box flex-shrink-0 d-flex align-items-center round-last"
+        style="backdrop-filter: hue-rotate(120deg);font-size: 22px;">
+        backdrop-filter: hue-rotate(120deg)
+      </div>
+    </div>
+  </div>
+  <script src="./bootstrap.bundle.js"></script>
+</body>
+
+</html>
